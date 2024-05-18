@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '858447c91db0434282b31b8d08d8df83',
+  rootNotionPageId: 'Whale-Fall-f44b3145707a481397471ab3a3667fb5',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'KujiraTiku',
 
   // open graph metadata (optional)
-  description: '清熱鯨騰草',
+  description: 'WhaleFall',
 
   // social usernames (optional)
   twitter: 'KujiraTiku',
@@ -56,15 +56,19 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'HOME',
-      pageId: '858447c91db0434282b31b8d08d8df83'
+      pageId: 'Whale-Fall-f44b3145707a481397471ab3a3667fb5'
     },
      {
-      title: 'ABOUT',
-      pageId: 'About-8ff57d87b0654b0b8c38b5e05947d5d7'
+      title: 'Profile',
+      pageId: '1cecfe00084a4e81a1af2c1c88b74c64'
     },
      {
-       title: 'BLOG',
-       pageId: 'Blog-1d5ee83bb5cc4956b1544d578e92beb6'
+       title: 'Resume',
+       pageId: 'c7f4603c47d64a09a33978dac5aabd2b'
+     },
+     {
+       title: ' Project',
+       pageId: '127625c10bbf4cc3871d450d136dbf3f'
      }
    ]
 })
