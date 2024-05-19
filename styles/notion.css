@@ -20,9 +20,9 @@
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
-
+/* 页面尺寸不固定 */
 .index-page {
-  --notion-max-width: 900px;
+  --notion-max-width: 95%;
 }
 
 .notion-text {
