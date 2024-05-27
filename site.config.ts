@@ -9,9 +9,9 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'KujiraTiku',
+  name: 'TaoJingyu',
   domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'KujiraTiku',
+  author: 'TaoJingyu',
 
   // open graph metadata (optional)
   description: 'WhaleFall',
@@ -55,20 +55,8 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'HOME',
+      title: 'Home',
       pageId: 'Whale-Fall-f44b3145707a481397471ab3a3667fb5'
-    },
-     {
-      title: 'Profile',
-      pageId: '1cecfe00084a4e81a1af2c1c88b74c64'
-    },
-     {
-       title: 'Resume',
-       pageId: 'c7f4603c47d64a09a33978dac5aabd2b'
-     },
-     {
-       title: ' Project',
-       pageId: '127625c10bbf4cc3871d450d136dbf3f'
-     }
+    }
    ]
 })
