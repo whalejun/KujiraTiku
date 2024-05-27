@@ -27,9 +27,10 @@
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
-/* 页面宽度不固定 */
+
 .index-page {
-  --notion-max-width: 95%;
+  width: 100%;
+  max-width: 1080px;
 }
 
 .notion-text {
@@ -43,9 +44,6 @@
 .notion-asset-wrapper {
   margin-top: 1em;
   margin-bottom: 1em;
-}
-.notion-asset-wrapper img {
-  border-radius: 8px;
 }
 .notion-asset-wrapper-video > div,
 .notion-asset-wrapper-video video {
@@ -66,13 +64,9 @@
 }
 /*blog间隔尺寸*/
 .notion-gallery-grid {
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 3vmin;
   gap: 3vmin;
-}
-.notion-collection-card-property:first-child {
-  font-size: 14px;
-  font-weight: 700;
 }
 .notion-gallery-grid .notion-page-icon-inline {
   display: none;
@@ -91,10 +85,6 @@
 /* 列表状态影藏多余的标题 */
 .notion-list-item-body .notion-property-title {
   display: none;
-}
-/* 看板布局 影响下方左右拉动条*/
-.notion-board {
-  overflow: hidden;
 }
 .notion-collection-card {
   border-radius: 16px;
@@ -157,7 +147,10 @@
 .notion-h3 {
   margin-bottom: 0.25em;
 }
-
+/* 标题2居中 */
+.notion-h2 {
+  margin: auto;
+}
 .notion-callout {
   margin: 0.75em 0;
 }
@@ -440,5 +433,15 @@
   }
   .notion-header .button {
     padding: 5px;
+  }
+}
+/* 删除右边范围 */
+@media (min-width: 1300px) and (min-height: 300px) {
+  .notion-page-content-has-aside .notion-page-content-inner {
+    width: unset;
+    max-width: unset;
+  }
+  .notion-page-content-has-aside {
+    width: unset;
   }
 }
