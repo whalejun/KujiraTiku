@@ -29,8 +29,8 @@
 }
 
 .index-page {
-  width: 100%;
-  max-width: 1080px;
+  --notion-width: 100%;
+  --notion-max-width: 900px;
 }
 
 .notion-text {
@@ -435,13 +435,8 @@
     padding: 5px;
   }
 }
-/* 删除右边范围 */
-@media (min-width: 1300px) and (min-height: 300px) {
-  .notion-page-content-has-aside .notion-page-content-inner {
-    width: unset;
-    max-width: unset;
-  }
-  .notion-page-content-has-aside {
-    width: unset;
-  }
+/*文字居中对齐*/
+.notion-page {
+  padding-left: unset;
+  padding-right: unset;
 }
